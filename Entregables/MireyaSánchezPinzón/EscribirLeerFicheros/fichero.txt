@@ -1,0 +1,1 @@
+[Usuario(id=262dc096-aaaf-436e-9b47-ecf69bd44940, username='Natalia', mail='email@hotmail.com'), Usuario(id=31e43e84-36a2-4b47-bb5a-3a95ff1dd458, username='Maria', mail='correo@gmail.com'), Usuario(id=7aa48d92-9ad9-4e87-8b4f-f2bcbdc72b8d, username='Maria', mail='correo5@gmail.com')]Usuario(id=3a9b9c41-2f8a-4fe5-91af-8e18b1b2dfa4, username='', mail='mireeya@gamil.xom')
