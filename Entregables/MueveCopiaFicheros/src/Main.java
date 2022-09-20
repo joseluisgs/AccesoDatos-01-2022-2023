@@ -1,3 +1,4 @@
+import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -7,16 +8,20 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Path file = Paths.get("src/partida/Fichero");
-        Path destiny = Paths.get("src/destiny/Fichero");
+        Path file = Paths.get("src"+File.separator+"partida"+ File.separator+"Fichero");
+        File directorio = new File("src"+File.separator+"Destiny");
+        Path destiny = Paths.get(directorio+File.separator+"Fichero");
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Elige la opcion: ");
         System.out.println("--- Copiar ---");
-        System.out.println("--- Pegar ---");
+        System.out.println("--- Mover ---");
         String eleccion = scanner.next();
 
         try {
+            if (!directorio.exists()) {
+                directorio.mkdirs();
+            }
             if (Files.exists(file)) {
                 if (eleccion.equalsIgnoreCase("Copiar")) {
                     Files.copy(file, destiny, StandardCopyOption.REPLACE_EXISTING);
