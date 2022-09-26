@@ -3,6 +3,7 @@ package es.ruymi.ejercicio02
 import es.ruymi.ejercicio03.models.Usuario
 import es.ruymi.ejercicio03.utils.Utils
 import java.io.File
+import java.util.*
 import kotlin.collections.ArrayList
 
 //Hacer una aplicación que copie o mueva ficheros, preguntando si quiere sobreescribir o no.
@@ -27,14 +28,19 @@ fun main() {
             sel = readln()
             res = Utils().comprobarSeleccion(sel)
             if(!res){
+                if(sel.uppercase(Locale.getDefault()) == "SI"){
+                    File(ruta1).copyTo(ruta2)
+                    println("Fichero copiado correctamente")
+                }else{
+                    println("Fichero no copiado")
+                    res = true;
+                }
+            }else{
                 println("Selección no válida")
             }
         }while(!res)
 
-        File(ruta1).copyTo(ruta2)
-        println("Fichero copiado correctamente")
-    }else{
-        println("Fichero no copiado")
+
     }
 
 
