@@ -34,7 +34,7 @@ fun main(){
     nombre = readln()
     println("Dime un correo: ")
     correo = readln()
-    val usuario = Usuario03(nombre, correo)
+    val usuario = Usuario03(UUID.randomUUID().toString(), nombre, correo)
     fichero.appendText(" $usuario")
 
     //fichero con binario
