@@ -1,0 +1,3 @@
+5ea2bb2a-0d16-42aa-97b2-85fb9d6f21c6,25,alumno
+f1525795-9fbb-40fb-be8a-d757d80be060,0,alumno
+c0a61a47-c082-4e3e-a917-30b0190730f5,41,alumno
