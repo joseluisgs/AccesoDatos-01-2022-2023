@@ -1,0 +1,44 @@
+<html lang="en">
+   <head>
+       <script type="text/javascript" data-lets-plot-script="library" src="https://cdn.jsdelivr.net/gh/JetBrains/lets-plot@v2.3.0/js-package/distr/lets-plot.min.js"></script>
+   </head>
+   <body>
+          <div id="Q86Nuz"></div>
+   <script type="text/javascript" data-lets-plot-script="plot">
+       var plotSpec={
+"ggtitle":{
+"text":"Accidentes por Tipo de Vehiculo"
+},
+"mapping":{
+},
+"data":{
+"numAccidentes":[28834.0,958.0,3006.0,629.0,691.0,1682.0,2745.0,970.0,55.0,632.0,105.0,181.0,110.0,577.0,10.0,78.0,19.0,154.0,74.0,68.0,6.0,36.0,35.0,1.0,2.0,14.0,28.0,3.0,1.0,3.0,7.0,1.0,5.0,3.0,3.0,1.0,1.0,1.0],
+"tipoVehiculo":["Turismo","Autobús","Motocicleta hasta 125cc","Todo terreno","Bicicleta","Motocicleta > 125cc","Furgoneta","Camión rígido","Sin especificar","Ciclomotor","Maquinaria de obras","Tractocamión","Otros vehículos con motor","VMU eléctrico","Cuadriciclo no ligero","Vehículo articulado","Autocaravana","Bicicleta EPAC (pedaleo asistido)","Autobús articulado","Autobus EMT","Ambulancia SAMUR","Cuadriciclo ligero","Patinete","Ciclomotor de tres ruedas","Semiremolque","Moto de tres ruedas > 125cc","Ciclo","Maquinaria agrícola","Remolque","Moto de tres ruedas hasta 125cc","Ciclomotor de dos ruedas L1e-B","Tren/metro","Otros vehículos sin motor","Camión de bomberos","Ciclo de motor L1e-A","Tranvía","Autobús articulado EMT","Despejado"]
+},
+"kind":"plot",
+"scales":[{
+"aesthetic":"x",
+"name":"Tipo de Vehiculo"
+},{
+"aesthetic":"y",
+"name":"N. Accidentes"
+}],
+"layers":[{
+"mapping":{
+"x":"tipoVehiculo",
+"y":"numAccidentes"
+},
+"stat":"identity",
+"alpha":0.8,
+"position":"stack",
+"geom":"bar",
+"fill":"#118ed8",
+"data":{
+}
+}]
+};
+       var plotContainer = document.getElementById("Q86Nuz");
+       LetsPlot.buildPlotFromProcessedSpecs(plotSpec, -1, -1, plotContainer);
+   </script>
+   </body>
+</html>

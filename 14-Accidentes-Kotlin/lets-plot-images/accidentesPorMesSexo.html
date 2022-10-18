@@ -1,0 +1,70 @@
+<html lang="en">
+   <head>
+       <script type="text/javascript" data-lets-plot-script="library" src="https://cdn.jsdelivr.net/gh/JetBrains/lets-plot@v2.3.0/js-package/distr/lets-plot.min.js"></script>
+   </head>
+   <body>
+          <div id="Zg7Ezv"></div>
+   <script type="text/javascript" data-lets-plot-script="plot">
+       var plotSpec={
+"ggtitle":{
+"text":"Accidentes por Meses"
+},
+"mapping":{
+},
+"data":{
+"fecha":["JANUARY","FEBRUARY","MARCH","APRIL","MAY","JUNE","JULY","AUGUST","SEPTEMBER","OCTOBER","NOVEMBER","DECEMBER"],
+"numAccidentesHombres":[1282.0,1652.0,2055.0,1934.0,2186.0,2314.0,1990.0,1398.0,2363.0,2900.0,2596.0,2490.0],
+"numAccidentes":[2047.0,2661.0,3418.0,3245.0,3650.0,3979.0,3218.0,2248.0,3946.0,4795.0,4410.0,4166.0],
+"numAccidentesMujeres":[474.0,748.0,1029.0,968.0,1013.0,1196.0,909.0,595.0,1212.0,1417.0,1327.0,1176.0]
+},
+"kind":"plot",
+"scales":[{
+"aesthetic":"x",
+"name":"Mes"
+},{
+"aesthetic":"y",
+"name":"N. Accidentes"
+}],
+"layers":[{
+"mapping":{
+"x":"fecha",
+"y":"numAccidentes"
+},
+"stat":"identity",
+"alpha":0.8,
+"position":"stack",
+"geom":"bar",
+"fill":"#118ed8",
+"data":{
+}
+},{
+"mapping":{
+"x":"fecha",
+"y":"numAccidentesHombres"
+},
+"stat":"identity",
+"alpha":0.8,
+"position":"stack",
+"geom":"bar",
+"fill":"#008000",
+"data":{
+}
+},{
+"mapping":{
+"x":"fecha",
+"y":"numAccidentesMujeres"
+},
+"stat":"identity",
+"alpha":0.3,
+"position":"stack",
+"geom":"bar",
+"fill":"#800080",
+"data":{
+}
+}]
+};
+       var plotContainer = document.getElementById("Zg7Ezv");
+       LetsPlot.buildPlotFromProcessedSpecs(plotSpec, -1, -1, plotContainer);
+   </script>
+   </body>
+</html>

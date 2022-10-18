@@ -1,0 +1,45 @@
+<html lang="en">
+   <head>
+       <script type="text/javascript" data-lets-plot-script="library" src="https://cdn.jsdelivr.net/gh/JetBrains/lets-plot@v2.3.0/js-package/distr/lets-plot.min.js"></script>
+   </head>
+   <body>
+          <div id="3xIaf6"></div>
+   <script type="text/javascript" data-lets-plot-script="plot">
+       var plotSpec={
+"ggtitle":{
+"text":"Accidentes por mes"
+},
+"mapping":{
+},
+"data":{
+"fecha":["JANUARY","FEBRUARY","MARCH","APRIL","MAY","JUNE","JULY","AUGUST","SEPTEMBER","OCTOBER","NOVEMBER","DECEMBER"],
+"numAccidentes":[2047.0,2661.0,3418.0,3245.0,3650.0,3979.0,3218.0,2248.0,3946.0,4795.0,4410.0,4166.0]
+},
+"kind":"plot",
+"scales":[{
+"aesthetic":"x",
+"name":"Mes"
+},{
+"aesthetic":"y",
+"name":"Numero de accidentes"
+}],
+"layers":[{
+"mapping":{
+"x":"fecha",
+"y":"numAccidentes"
+},
+"stat":"identity",
+"alpha":0.8,
+"width":0.3,
+"position":"stack",
+"geom":"bar",
+"fill":"#ffc000",
+"data":{
+}
+}]
+};
+       var plotContainer = document.getElementById("3xIaf6");
+       LetsPlot.buildPlotFromProcessedSpecs(plotSpec, -1, -1, plotContainer);
+   </script>
+   </body>
+</html>

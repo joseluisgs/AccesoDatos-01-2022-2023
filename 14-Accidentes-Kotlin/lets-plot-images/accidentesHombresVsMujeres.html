@@ -1,0 +1,43 @@
+<html lang="en">
+   <head>
+       <script type="text/javascript" data-lets-plot-script="library" src="https://cdn.jsdelivr.net/gh/JetBrains/lets-plot@v2.3.0/js-package/distr/lets-plot.min.js"></script>
+   </head>
+   <body>
+          <div id="jXubee"></div>
+   <script type="text/javascript" data-lets-plot-script="plot">
+       var plotSpec={
+"ggtitle":{
+"text":"Accidentes por Sexo"
+},
+"mapping":{
+},
+"data":{
+"total":[12064.0,25160.0],
+"sexo":["Mujer","Hombre"]
+},
+"kind":"plot",
+"scales":[{
+"aesthetic":"x",
+"name":"Sexo"
+},{
+"aesthetic":"y",
+"name":"N. Accidentes"
+}],
+"layers":[{
+"mapping":{
+"x":"sexo",
+"y":"total"
+},
+"stat":"identity",
+"alpha":0.8,
+"position":"stack",
+"geom":"bar",
+"data":{
+}
+}]
+};
+       var plotContainer = document.getElementById("jXubee");
+       LetsPlot.buildPlotFromProcessedSpecs(plotSpec, -1, -1, plotContainer);
+   </script>
+   </body>
+</html>

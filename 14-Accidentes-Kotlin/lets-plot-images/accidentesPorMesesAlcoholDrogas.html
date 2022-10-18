@@ -1,0 +1,70 @@
+<html lang="en">
+   <head>
+       <script type="text/javascript" data-lets-plot-script="library" src="https://cdn.jsdelivr.net/gh/JetBrains/lets-plot@v2.3.0/js-package/distr/lets-plot.min.js"></script>
+   </head>
+   <body>
+          <div id="yhB1jD"></div>
+   <script type="text/javascript" data-lets-plot-script="plot">
+       var plotSpec={
+"ggtitle":{
+"text":"Accidentes por Meses con Alcohol y Drogas"
+},
+"mapping":{
+},
+"data":{
+"fecha":["JANUARY","FEBRUARY","MARCH","APRIL","MAY","JUNE","JULY","AUGUST","SEPTEMBER","OCTOBER","NOVEMBER","DECEMBER"],
+"numAccidentesDrogas":[2.0,9.0,10.0,9.0,11.0,10.0,7.0,5.0,7.0,9.0,2.0,8.0],
+"numAccidentesAlcohol":[71.0,98.0,92.0,101.0,114.0,103.0,102.0,89.0,118.0,150.0,106.0,136.0],
+"numAccidentesAlcoholDrogas":[0.0,1.0,1.0,1.0,0.0,4.0,2.0,0.0,3.0,1.0,0.0,4.0]
+},
+"kind":"plot",
+"scales":[{
+"aesthetic":"x",
+"name":"Mes"
+},{
+"aesthetic":"y",
+"name":"N. Accidentes"
+}],
+"layers":[{
+"mapping":{
+"x":"fecha",
+"y":"numAccidentesAlcohol"
+},
+"stat":"identity",
+"alpha":0.8,
+"position":"stack",
+"geom":"bar",
+"fill":"#800080",
+"data":{
+}
+},{
+"mapping":{
+"x":"fecha",
+"y":"numAccidentesDrogas"
+},
+"stat":"identity",
+"alpha":0.8,
+"position":"stack",
+"geom":"bar",
+"fill":"#ffc000",
+"data":{
+}
+},{
+"mapping":{
+"x":"fecha",
+"y":"numAccidentesAlcoholDrogas"
+},
+"stat":"identity",
+"alpha":0.8,
+"position":"stack",
+"geom":"bar",
+"fill":"#ff0000",
+"data":{
+}
+}]
+};
+       var plotContainer = document.getElementById("yhB1jD");
+       LetsPlot.buildPlotFromProcessedSpecs(plotSpec, -1, -1, plotContainer);
+   </script>
+   </body>
+</html>

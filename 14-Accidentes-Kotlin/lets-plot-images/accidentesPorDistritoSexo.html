@@ -1,0 +1,70 @@
+<html lang="en">
+   <head>
+       <script type="text/javascript" data-lets-plot-script="library" src="https://cdn.jsdelivr.net/gh/JetBrains/lets-plot@v2.3.0/js-package/distr/lets-plot.min.js"></script>
+   </head>
+   <body>
+          <div id="Xn3dUX"></div>
+   <script type="text/javascript" data-lets-plot-script="plot">
+       var plotSpec={
+"ggtitle":{
+"text":"Accidentes por Distrito"
+},
+"mapping":{
+},
+"data":{
+"distrito":["PUENTE DE VALLECAS","USERA","MORATALAZ","SALAMANCA","SAN BLAS-CANILLEJAS","TETUÁN","CARABANCHEL","LATINA","BARAJAS","HORTALEZA","VILLAVERDE","CIUDAD LINEAL","FUENCARRAL-EL PARDO","CHAMBERÍ","CENTRO","MONCLOA-ARAVACA","CHAMARTÍN","VILLA DE VALLECAS","RETIRO","ARGANZUELA","VICÁLVARO","9"],
+"numAccidentesHombres":[1932.0,1144.0,715.0,1928.0,1196.0,1110.0,1582.0,1189.0,402.0,840.0,846.0,1619.0,1166.0,1311.0,1474.0,1345.0,1620.0,619.0,1383.0,1290.0,447.0,0.0],
+"numAccidentes":[3326.0,1821.0,1221.0,3072.0,2049.0,1734.0,2713.0,2041.0,671.0,1557.0,1385.0,2838.0,2141.0,2036.0,2165.0,2304.0,2707.0,1055.0,2192.0,1987.0,764.0,1.0],
+"numAccidentesMujeres":[1011.0,465.0,390.0,898.0,592.0,440.0,735.0,545.0,186.0,486.0,346.0,822.0,703.0,550.0,536.0,763.0,860.0,311.0,646.0,573.0,205.0,0.0]
+},
+"kind":"plot",
+"scales":[{
+"aesthetic":"x",
+"name":"Distrito"
+},{
+"aesthetic":"y",
+"name":"N. Accidentes"
+}],
+"layers":[{
+"mapping":{
+"x":"distrito",
+"y":"numAccidentes"
+},
+"stat":"identity",
+"alpha":0.8,
+"position":"stack",
+"geom":"bar",
+"fill":"#118ed8",
+"data":{
+}
+},{
+"mapping":{
+"x":"distrito",
+"y":"numAccidentesHombres"
+},
+"stat":"identity",
+"alpha":0.8,
+"position":"stack",
+"geom":"bar",
+"fill":"#008000",
+"data":{
+}
+},{
+"mapping":{
+"x":"distrito",
+"y":"numAccidentesMujeres"
+},
+"stat":"identity",
+"alpha":0.8,
+"position":"stack",
+"geom":"bar",
+"fill":"#800080",
+"data":{
+}
+}]
+};
+       var plotContainer = document.getElementById("Xn3dUX");
+       LetsPlot.buildPlotFromProcessedSpecs(plotSpec, -1, -1, plotContainer);
+   </script>
+   </body>
+</html>

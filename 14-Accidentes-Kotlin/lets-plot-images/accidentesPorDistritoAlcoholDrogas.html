@@ -1,0 +1,70 @@
+<html lang="en">
+   <head>
+       <script type="text/javascript" data-lets-plot-script="library" src="https://cdn.jsdelivr.net/gh/JetBrains/lets-plot@v2.3.0/js-package/distr/lets-plot.min.js"></script>
+   </head>
+   <body>
+          <div id="ayLATg"></div>
+   <script type="text/javascript" data-lets-plot-script="plot">
+       var plotSpec={
+"ggtitle":{
+"text":"Accidentes por Distrito con Alcohol y Drogas"
+},
+"mapping":{
+},
+"data":{
+"distrito":["PUENTE DE VALLECAS","SALAMANCA","CIUDAD LINEAL","CARABANCHEL","CHAMARTÍN","MONCLOA-ARAVACA","RETIRO","CENTRO","FUENCARRAL-EL PARDO","SAN BLAS-CANILLEJAS","LATINA","CHAMBERÍ","ARGANZUELA","USERA","TETUÁN","HORTALEZA","VILLAVERDE","MORATALAZ","VILLA DE VALLECAS","VICÁLVARO","BARAJAS","9"],
+"numAccidentesDrogas":[12.0,4.0,5.0,7.0,5.0,2.0,7.0,3.0,4.0,2.0,3.0,0.0,5.0,3.0,3.0,2.0,9.0,4.0,7.0,2.0,0.0,0.0],
+"numAccidentesAlcohol":[120.0,78.0,106.0,129.0,80.0,58.0,48.0,61.0,47.0,64.0,76.0,47.0,45.0,67.0,48.0,54.0,53.0,27.0,34.0,20.0,18.0,0.0],
+"numAccidentesAlcoholDrogas":[3.0,1.0,0.0,1.0,1.0,1.0,0.0,0.0,0.0,1.0,2.0,0.0,0.0,0.0,0.0,2.0,1.0,2.0,1.0,1.0,0.0,0.0]
+},
+"kind":"plot",
+"scales":[{
+"aesthetic":"x",
+"name":"Distrito"
+},{
+"aesthetic":"y",
+"name":"N. Accidentes"
+}],
+"layers":[{
+"mapping":{
+"x":"distrito",
+"y":"numAccidentesAlcohol"
+},
+"stat":"identity",
+"alpha":0.8,
+"position":"stack",
+"geom":"bar",
+"fill":"#800080",
+"data":{
+}
+},{
+"mapping":{
+"x":"distrito",
+"y":"numAccidentesDrogas"
+},
+"stat":"identity",
+"alpha":0.8,
+"position":"stack",
+"geom":"bar",
+"fill":"#ffc000",
+"data":{
+}
+},{
+"mapping":{
+"x":"distrito",
+"y":"numAccidentesAlcoholDrogas"
+},
+"stat":"identity",
+"alpha":0.8,
+"position":"stack",
+"geom":"bar",
+"fill":"#ff0000",
+"data":{
+}
+}]
+};
+       var plotContainer = document.getElementById("ayLATg");
+       LetsPlot.buildPlotFromProcessedSpecs(plotSpec, -1, -1, plotContainer);
+   </script>
+   </body>
+</html>
